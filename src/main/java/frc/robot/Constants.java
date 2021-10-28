@@ -16,9 +16,9 @@ public final class Constants
 {
     public static final class DriveTrainPWMPorts
     {
-        public static final int FRONT_RIGHT = 1;
-        public static final int BACK_RIGHT = 2;
-        public static final int FRONT_LEFT = 3;
-        public static final int BACK_LEFT = 4;
+        public static final int FRONT_RIGHT_DRIVE = 4;
+        public static final int BACK_RIGHT_DRIVE = 5;
+        public static final int FRONT_LEFT_DRIVE = 1;
+        public static final int BACK_LEFT_DRIVE = 2;
     }
 }
