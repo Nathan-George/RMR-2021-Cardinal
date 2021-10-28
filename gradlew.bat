@@ -32,7 +32,7 @@ set APP_HOME=%DIRNAME%
 @rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
 
-set JAVA_HOME=C:\Users\244016\Downloads\microsoft-jdk-11.0.12.7.1-windows-x64\jdk-11.0.12+7
+set JAVA_HOME=C:\Users\Public\\wpilib\2021\jdk
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome

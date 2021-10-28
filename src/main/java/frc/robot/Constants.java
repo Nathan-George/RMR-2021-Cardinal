@@ -14,11 +14,11 @@ package frc.robot;
  */
 public final class Constants
 {
-    public static final class DriveTrainPWMPorts
+    public static final class Drives
     {
-        public static final int FRONT_RIGHT_DRIVE = 4;
-        public static final int BACK_RIGHT_DRIVE = 5;
-        public static final int FRONT_LEFT_DRIVE = 1;
-        public static final int BACK_LEFT_DRIVE = 2;
+        public static final int FRONT_RIGHT = 4;
+        public static final int BACK_RIGHT = 5;
+        public static final int FRONT_LEFT = 1;
+        public static final int BACK_LEFT = 2;
     }
 }
