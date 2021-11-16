@@ -44,7 +44,7 @@ public class DriveTrain extends SubsystemBase {
     drive = new DifferentialDrive(left, right);
   }
 
-  public void set(float speed, float rotation)
+  public void set(double speed, double rotation)
   {
     drive.arcadeDrive(speed, rotation);
   }
