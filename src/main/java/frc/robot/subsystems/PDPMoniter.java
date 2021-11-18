@@ -5,6 +5,7 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.PowerDistributionPanel;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class PDPMoniter extends SubsystemBase {
@@ -16,5 +17,9 @@ public class PDPMoniter extends SubsystemBase {
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+    int[] channels = {0, 1, 2, 3, 12, 13, 14, 15};
+    for (int channel : channels) {
+      SmartDashboard.putNumber("Current ${channel}", PDP.getCurrent(channel));
+    }
   }
 }
