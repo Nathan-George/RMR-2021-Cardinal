@@ -28,8 +28,8 @@ public class DriveTrain extends SubsystemBase {
   public DriveTrain()
   {
     // setup left drive
-    frontLeft = new WPI_VictorSPX(Constants.Motors.FRONT_LEFT);
-    backLeft = new WPI_VictorSPX(Constants.Motors.BACK_LEFT);
+    frontLeft = new WPI_VictorSPX(Constants.Drive.FRONT_LEFT);
+    backLeft = new WPI_VictorSPX(Constants.Drive.BACK_LEFT);
 
     // must be inverted
     backLeft.setInverted(true);
@@ -37,8 +37,8 @@ public class DriveTrain extends SubsystemBase {
     left = new SpeedControllerGroup(frontLeft, backLeft);
 
     // setup right drive
-    frontRight = new WPI_VictorSPX(Constants.Motors.FRONT_RIGHT);
-    backRight = new WPI_VictorSPX(Constants.Motors.BACK_RIGHT);
+    frontRight = new WPI_VictorSPX(Constants.Drive.FRONT_RIGHT);
+    backRight = new WPI_VictorSPX(Constants.Drive.BACK_RIGHT);
 
     right = new SpeedControllerGroup(frontRight, backRight);
 

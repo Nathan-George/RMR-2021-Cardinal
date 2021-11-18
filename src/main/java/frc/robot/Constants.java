@@ -14,17 +14,44 @@ package frc.robot;
  */
 public final class Constants
 {
-    public static final class Motors
+    // motor CAN ID classes
+    public static final class Drive
     {
         public static final int FRONT_RIGHT = 4;
         public static final int BACK_RIGHT = 5;
         public static final int FRONT_LEFT = 1;
         public static final int BACK_LEFT = 2;
-        //grabbers
-        public static final int LBG = 3;
-        public static final int RBG = 6;
+    }
+    public static final class Grabber
+    {
+        public static final int LEFT = 3;
+        public static final int RIGHT = 6;
+        public static final int PIVOT = 7;
+        public static final int ELEVATOR = 8;
+    }
 
-        public static final int BAP = 7;
-        public static final int ELE = 8;
+    // solenoid PCM ID Classes
+    public static final class Beak
+    {
+        public static final int IN = 3;
+        public static final int OUT = 2;
+    }
+    public static final class Shifter
+    {
+        public static final int LOW = 4;
+        public static final int HIGH = 5;
+    }
+    public static final class Solenoid
+    {
+        public static final int LIFTER = 6;
+        public static final int TRACK = 0;
+    }
+
+    public static final class LimitSwitches
+    {
+        public static final int TOP = 3;
+        public static final int BOTTOM = 2;
+        public static final int BACK = 8;
+        public static final int TOP_ARM = 1;
     }
 }
