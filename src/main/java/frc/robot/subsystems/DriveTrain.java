@@ -12,6 +12,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
 
 public class DriveTrain extends SubsystemBase {
+  
   private WPI_VictorSPX frontLeft;
   private WPI_VictorSPX backLeft;
 
@@ -27,8 +28,8 @@ public class DriveTrain extends SubsystemBase {
   public DriveTrain()
   {
     // setup left drive
-    frontLeft = new WPI_VictorSPX(Constants.Drives.FRONT_LEFT);
-    backLeft = new WPI_VictorSPX(Constants.Drives.BACK_LEFT);
+    frontLeft = new WPI_VictorSPX(Constants.Motors.FRONT_LEFT);
+    backLeft = new WPI_VictorSPX(Constants.Motors.BACK_LEFT);
 
     // must be inverted
     backLeft.setInverted(true);
@@ -36,8 +37,8 @@ public class DriveTrain extends SubsystemBase {
     left = new SpeedControllerGroup(frontLeft, backLeft);
 
     // setup right drive
-    frontRight = new WPI_VictorSPX(Constants.Drives.FRONT_RIGHT);
-    backRight = new WPI_VictorSPX(Constants.Drives.BACK_RIGHT);
+    frontRight = new WPI_VictorSPX(Constants.Motors.FRONT_RIGHT);
+    backRight = new WPI_VictorSPX(Constants.Motors.BACK_RIGHT);
 
     right = new SpeedControllerGroup(frontRight, backRight);
 
